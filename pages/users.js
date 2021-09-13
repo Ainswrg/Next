@@ -1,11 +1,12 @@
 import Link from 'next/Link';
 import React from 'react';
+import MainContainer from '../components/MainContainer';
 
 const Users = ({users}) => {
 
 
   return (
-    <div>
+    <MainContainer keywords={"users"}>
       <h1>Users List</h1>
       <ul>
         {users.map((user) => (
@@ -16,7 +17,7 @@ const Users = ({users}) => {
           </li>
         ))}
       </ul>
-    </div>
+    </MainContainer>
   );
 };
 
